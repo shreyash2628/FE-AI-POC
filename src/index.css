@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-50: #f5f7fd;
+  --color-navy-100: #edf3ff;
+  --color-navy-200: #dfeafc;
+  --color-navy-600: #40628f;
+  --color-navy-700: #2d4d7a;
+  --color-navy-800: #1e3b65;
+  --color-navy-900: #0b1f3a;
+}
+
+html, body, #root { height: 100%; }
+body { @apply bg-[#F6F7F9] font-sans text-navy-900 antialiased; }
+
+:focus-visible { outline: 2px solid #1F9D8B; outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
